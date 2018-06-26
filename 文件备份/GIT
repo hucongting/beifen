@@ -1,0 +1,72 @@
+###Git工作区域
+Git Repository(Git仓库) ： 最终确定的文件保存到仓库，成为一个新的版本，并且对他人可见。
+
+暂存区：
+>git status 查询当前状况
+>git add xxxx.xx 将文件从到暂存区
+>git commit -m "提交描述"
+
+工作区(Working Directory)： 添加，编辑，修改文件等动作。
+
+
+###初始化及仓库创建和操作
+设置用户名 及设置用户名邮箱：
+>git config --global user.name 'xxxx'
+>git config --global user.email 'xxxxx@xx.com'
+初始化一个新的Git仓库：
+1.创建文件夹 mkdir
+2.创建git仓库 
+>cd xx
+>pwd
+>git init
+向仓库添加文件：
+>touch xx.xx      新建文件
+>git status   
+>git add xx.xx    添加到暂存区
+>git commit -m '文件描述'    将文件从暂存区提交到仓库
+>git status
+修改仓库文件：
+>vi xxx
+>Esc:wq!
+删除仓库文件：
+>rm xx.xx     删除文件
+>git rm xx.xx 从Git中删除文件
+
+###管理远程仓库
+Git克隆操作：
+>git clone 仓库地址 (https://github.com/hucongting/test.git   --> test项目地址(HTTPS))
+目的>将远程仓库（GitHub对应的项目）复制到本地。
+
+>git add xx.xx
+>git status
+>git commit -m '文件描述'
+>git status
+>git push      发布本地提交到远程仓库，第一次需要验证用户名和邮箱密码；之后登陆GitHub刷新项目
+
+
+>git remote add origin <url>
+git push origin master
+
+>git config --list  查看被更新的远程仓库信息
+
+
+###GitHub Pages 搭建个人网站
+个人站点：https://用户名.github.io
+搭建步骤：
+>创建个人站点（新建仓库，仓库名必须是>用户名.github.io）
+>在仓库创建index.html
+
+
+https://github.com/hucongting/test02.git
+
+
+
+类加载器；
+双清委派机制
+
+
+
+
+
+
+

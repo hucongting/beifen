@@ -1,0 +1,24 @@
+课程模块 ---> 课程分类
+一级分类：  如：IT互联网，语言留学
+二级分类：  如：IT互联网分类下有-->编程语言，移动开发，前端开发，后端开发等
+三级分类：  如：二级分类下的编程语言分类中-->java,c#,python等类型
+
+
+一级分类表：
+OneType: onetp_id, onetp_name,onetp_desc
+TwoType: twotp_id, twotp_name,twotp_desc,onetp_id
+ThreeType:threetp_id,threetp_name,threetp_name,onetp_id,twotp_desc
+
+enging = InnoDB character set utf8
+on delete cascade on update cascade
+
+
+
+
+视频目录：
+
+
+
+
+
+

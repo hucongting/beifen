@@ -1,0 +1,7 @@
+启动redis服务
+$ cd src
+$ ./redis-server
+
+以上命令将打开以下终端：
+redis-cli
+

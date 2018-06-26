@@ -1,0 +1,12 @@
+roles 角色过滤器
+/xxx.jsp  = roles[角色]
+
+继承AuthorizingRealm类，实现doGetAuthorizationInfo方法
+1.从PrincipalCollection中获取登陆的用户信息
+2.利用登陆的用户信息来查询当前用户的角色或权限
+  Set<String> roles = new HashSet<String>();
+  if("xxxx权限".equest(principal))
+	roles.add("xxx权限")
+3.创建SimpleAuthorizationInfo,设置reles属性
+4.返回SimpleAuthorizationInfo对象
+

@@ -1,0 +1,62 @@
+进程：独立内存
+线程：占用进程内存
+
+线程提供的静态方法：
+1.Thread.currentThread()
+该方法可以获取运行这个方法的线程；
+
+2.sleep(long ms)
+该方法可以让运行这个方法的线程进入阻塞状态指定毫秒
+
+thread.interrupt()方法： 中断sleep阻塞中的线程会抛出异常
+jdk1.8 之前类修饰final
+
+"前台线程"？
+3.守护线程（后台线程）: Deamon：
+thread.setDaemon(true);
+该线程在其它线程结束后跟着结束
+
+4.join
+可以协调线程之间的同步运行关系。可以使一个线程在另一个线程后面等待，到该线程运行完毕再继续运行
+同步运行：执行有先后顺序
+异步运行：各自执行各自的，多线程是异步运行的
+
+并发同步：
+synchronized
+同步块：缩小同步范围
+
+synchronized（同步监视器对象{
+	需要同步运行的代码片段
+}
+若希望多个线程同步运行同步快中的代码，必须保证多个线程看到的同步监视器对象时同一个。
+同步监视器对象可以是java中任何对象，结合实际情况自行挑选。只要保证多个线程看到的是同一个即可。
+
+静态方法使用synchronized修饰后，一定具有同步效果。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###线程池
+ExecutorService用于管理线程池的类
+ExecutorService executorService = Executors.xxxxxxx();
+executorService.execute(Runnable run);
+executorService.shutdown() | executorService.shutdownNow()
+
+
+
+
+
+
+
+
+
