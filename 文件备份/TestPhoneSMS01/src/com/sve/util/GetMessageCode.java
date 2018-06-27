@@ -9,10 +9,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+import org.json.JSONException;
 import org.json.JSONObject;
-
-
 
 /**
  *  发送验证码
@@ -36,6 +34,7 @@ public class GetMessageCode {
 	 * 根据手机号码获取验证码
 	 * @param phone
 	 * @return
+	 * @throws JSONException 
 	 */
 	public static String getCode(String phone) {
 		String rod = smsCode();
@@ -74,12 +73,9 @@ public class GetMessageCode {
 				return defaultRespCode;
 			}
 			
-			
 		} catch (Exception e) {
-			// TODO: handle exception
 			e.printStackTrace();
 		}
-		
 		return null;
 	}
 	
